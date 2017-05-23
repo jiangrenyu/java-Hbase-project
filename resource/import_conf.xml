@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<property>
+		<name>hbase.zookeeper.quorum</name>
+		<value>192.168.230.100</value>
+		<description>zookeeper节点地址</description>
+	</property>
+
+	<property>
+		<name>hbase.zookeeper.property.clientPort</name>
+		<value>2181</value>
+		<description>zookeeper端口号</description>
+	</property>
+
+	<property>
+		<name>conf.mapreduce.dataSperator</name>
+		<value>\u007c</value>
+		<description>文件数据分隔符16进制，默认是"|"</description>
+	</property>
+
+	<property>
+		<name>conf.HBase.TableName</name>
+		<value>test</value>
+		<description>Hbase表名</description>
+	</property>
+
+	<property>
+		<name>conf.HBase.familyName</name>
+		<value>info1</value>
+		<description>Hbase中列族的名称,前提Hbase表中已经有所配置的列族</description>
+	</property>
+
+	<property>
+		<name>conf.hdfs.fields</name>
+		<value>year,month,day,name,age,address,score,love</value>
+		<description>此处的列名是为了和每一行的所有字段值建立映射</description>
+	</property>
+
+
+	<property>
+		<name>conf.Hbase.qualifier</name>
+		<value>name,age</value>
+		<description>配置向哪些列插入字段值</description>
+	</property>
+
+	<property>
+		<name>conf.hbase.rowKey</name>
+		<value>year,month,day</value>
+		<description>配置哪些字段值做rowkey</description>
+	</property>
+
+
+	<property>
+		<name>mr.use.kerberos</name>
+		<value>false</value>
+		<description>是否使用kerberos认证</description>
+	</property>
+
+	<property>
+		<name>mr.kerberos.ketsotre</name>
+		<value>/data1/hjtest/test/zhj_test/hjpt.keytab</value>
+	</property>
+
+	<property>
+		<name>mr.kerberos.princpal</name>
+		<value>hjpt/nm-304-hw-xh628v3-bigdata-189@HADOOP.CHINATELECOM.CN</value>
+	</property>
+
+
+</configuration>

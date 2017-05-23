@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<property>
+		<name>hbase.zookeeper.quorum</name>
+		<value>192.168.230.100</value>
+		<description>zookeeper节点地址</description>
+	</property>
+
+	<property>
+		<name>hbase.zookeeper.property.clientPort</name>
+		<value>2181</value>
+		<description>zookeeper端口号</description>
+	</property>
+
+
+
+	<property>
+		<name>conf.HBase.TableName</name>
+		<value>test1</value>
+		<description>Hbase表名</description>
+	</property>
+
+
+	<property>
+		<name>conf.HBase.family</name>
+		<value>info1</value>
+		<description>HBase表列族</description>
+	</property>
+
+
+	<property>
+		<name>conf.hbase.rowKey</name>
+		<value>rk,-,rk70</value>
+		<description>配置的rowkey：全表扫描配置为"ALL",RowKey范围查询配置为：rowKey1,-,rowKey2,查询特定的rowKey配置为：rowKey1,rowKey2,.........
+		</description>
+	</property>
+
+
+
+	<property>
+		<name>conf.hbase.fields</name>
+		<value>name,age,address</value>
+		<description>Hbase中，一行数据中从第0个字段开始到最后一个字段所转化的Hbase列名称 “,” 分割
+		</description>
+	</property>
+
+	<property>
+		<name>conf.Hbase.isHDFS</name>
+		<value>true</value>
+		<description>如果配置为true,数据导出到HDFS，如果为false,数据导出到本地，默认为true
+		</description>
+	</property>
+
+	<property>
+		<name>conf.export.path</name>
+		<value>/path/path21/fanwei12</value>
+		<description>数据导出路径</description>
+	</property>
+
+	<property>
+		<name>conf.data.Sperator</name>
+		<value>|</value>
+		<description>文件数据分隔符16进制</description>
+	</property>
+
+
+	<property>
+		<name>mr.use.kerberos</name>
+		<value>false</value>
+		<description>是否使用kerberos认证</description>
+	</property>
+
+	<property>
+		<name>mr.kerberos.ketsotre</name>
+		<value>/data1/hjtest/test/zhj_test/hjpt.keytab</value>
+	</property>
+
+	<property>
+		<name>mr.kerberos.princpal</name>
+		<value>hjpt/nm-304-hw-xh628v3-bigdata-189@HADOOP.CHINATELECOM.CN
+		</value>
+	</property>
+
+</configuration>
+

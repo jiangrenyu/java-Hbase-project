@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+   <property>
+      <name>hbase.security.authentication</name>
+      <value>kerberos</value>
+   </property>
+   <property>
+        <name>hbase.master.kerberos.principal</name>
+        <value>hbase/_HOST@HADOOP.CHINATELECOM.CN</value>
+   </property>
+   <property>
+        <name>hbase.regionserver.kerberos.principal</name>
+        <value>hbase/_HOST@HADOOP.CHINATELECOM.CN</value>
+   </property>
+</configuration>
